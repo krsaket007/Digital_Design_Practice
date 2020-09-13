@@ -1,0 +1,109 @@
+Qflow route logfile created on Sun Sep 13 13:26:05 IST 2020
+qrouter -noc  -s MUX_2X1.cfg
+Qrouter detail maze router version 1.4.59.T
+Reading LEF data from file /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef.
+LEF Read, Line 191: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 192: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 196: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 197: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 207: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 208: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 212: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 213: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 223: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 224: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 228: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 229: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 239: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 240: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 244: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 245: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 255: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 256: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 260: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 261: NOTE:  Old format VIARULE ignored.
+LEF file:  Defines site core (ignored)
+LEF read: Processed 2941 lines.
+LEF Read: encountered 0 errors and 20 warnings total.
+Vertical route layer at non-minimum pitch 1.6.  Using smaller pitch 0.8, will route on 1-of-2 tracks for layer metal6.
+Reading DEF data from file MUX_2X1.def.
+Diagnostic: Design name: "MUX_2X1"
+  Processed 5 vias total.
+  Processed 8 subcell instances total.
+  Processed 6 pins total.
+  Processed 7 nets total (0 fixed).
+  Processed 2 special nets total (4 fixed).
+DEF read: Processed 120 lines.
+Output scale = microns / 100, precision 1
+No antenna cell defined!
+There are 9 nets in this design.
+*** Running stage1 routing with defaults
+Finished routing net sel
+Nets remaining: 8
+Finished routing net inp_1
+Nets remaining: 7
+Finished routing net _0_
+Nets remaining: 6
+Finished routing net inp_2
+Nets remaining: 5
+Finished routing net _1_
+Nets remaining: 4
+Finished routing net _2_
+Nets remaining: 3
+Finished routing net out
+Nets remaining: 2
+
+----------------------------------------------
+Progress: Stage 1 total routes completed: 8
+No failed routes!
+----------------------------------------------
+*** Running stage3 routing with defaults, 1st round
+Finished routing net sel
+Nets remaining: 8
+Finished routing net inp_1
+Nets remaining: 7
+Keeping route for net _0_
+Finished routing net inp_2
+Nets remaining: 5
+Keeping route for net _1_
+Finished routing net _2_
+Nets remaining: 3
+Finished routing net out
+Nets remaining: 2
+
+----------------------------------------------
+Progress: Stage 3 total routes completed: 14
+No failed routes!
+----------------------------------------------
+*** Running stage3 routing with defaults, 2nd round
+Finished routing net sel
+Nets remaining: 8
+Finished routing net inp_1
+Nets remaining: 7
+Keeping route for net _0_
+Finished routing net inp_2
+Nets remaining: 5
+Keeping route for net _1_
+Finished routing net _2_
+Nets remaining: 3
+Finished routing net out
+Nets remaining: 2
+
+----------------------------------------------
+Progress: Stage 3 total routes completed: 20
+No failed routes!
+----------------------------------------------
+*** Writing DEF file MUX_2X1_route.def
+emit_routes():  DEF file has 7 nets and 4 specialnets.
+but qrouter wants to write 9 nets and specialnets.
+----------------------------------------------
+Final: No failed routes!
+----------------------------------------------
+*** Writing RC file MUX_2X1_route.rc
+Running annotate.tcl antenna.out /home/alok/vsdflow/verilog/synthesis/MUX_2X1.rtlnopwr.v
+  /home/alok/vsdflow/verilog/synthesis/MUX_2X1.spc /home/alok/vsdflow/verilog/synthesis/MUX_2X1.rtlnopwr.anno.v
+  /home/alok/vsdflow/verilog/synthesis/MUX_2X1.anno.spc  /usr/local/share/qflow/tech/osu018/osu018_stdcells.sp /home/alok/vsdflow/verilog/synthesis/MUX_2X1_powerground
+Running annotate.tcl
+found cell FILL pinlist vdd gnd
+Done with annotate.tcl
+Router script ended on Sun Sep 13 13:26:06 IST 2020

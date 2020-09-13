@@ -1,0 +1,28 @@
+Qflow DRC logfile created on Sun Sep 13 13:26:09 IST 2020
+magic -dnull -noconsole  /home/alok/vsdflow/verilog/layout/run_drc_MUX_2X1.tcl
+
+Magic 8.2 revision 172 - Compiled on Thu Aug 13 18:58:09 IST 2020.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Input style lambda=0.10(p): scaleFactor=10, multiplier=1
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Loading "/home/alok/vsdflow/verilog/layout/run_drc_MUX_2X1.tcl" from command line.
+Reading LEF data from file /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef.
+This action cannot be undone.
+LEF read, Line 16 (Message): Unknown keyword "OBS" in LEF file; ignoring.
+LEF read, Line 17 (Message): Unknown keyword "PIN" in LEF file; ignoring.
+LEF read, Line 309 (Message): Defines site core (ignored)
+Moving label "CLK" from metal1 to m2contact in cell DFFNEGX1.
+Moving label "CLK" from metal1 to m2contact in cell DFFNEGX1.
+Moving label "A" from metal1 to m2contact in cell XNOR2X1.
+LEF read: Processed 2941 lines.
+Processing timestamp mismatches: BUFX2, FILL, NAND2X1, OAI21X1, INVX1.
+drc = 0
+DRC checking script ended on Sun Sep 13 13:26:10 IST 2020

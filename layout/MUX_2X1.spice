@@ -1,0 +1,33 @@
+* NGSPICE file created from MUX_2X1.ext - technology: scmos
+
+* Black-box entry subcircuit for INVX1 abstract view
+.subckt INVX1 A gnd Y vdd
+.ends
+
+* Black-box entry subcircuit for FILL abstract view
+.subckt FILL gnd vdd
+.ends
+
+* Black-box entry subcircuit for OAI21X1 abstract view
+.subckt OAI21X1 A B C gnd Y vdd
+.ends
+
+* Black-box entry subcircuit for BUFX2 abstract view
+.subckt BUFX2 A gnd Y vdd
+.ends
+
+* Black-box entry subcircuit for NAND2X1 abstract view
+.subckt NAND2X1 A B gnd Y vdd
+.ends
+
+.subckt MUX_2X1 vdd gnd inp_1 inp_2 sel out
+XINVX1_1 inp_1 gnd INVX1_1/Y vdd INVX1
+XFILL_0_1_0 gnd vdd FILL
+XOAI21X1_1 INVX1_1/Y sel OAI21X1_1/C gnd BUFX2_1/A vdd OAI21X1
+XFILL_0_1_1 gnd vdd FILL
+XBUFX2_1 BUFX2_1/A gnd out vdd BUFX2
+XFILL_0_0_0 gnd vdd FILL
+XNAND2X1_1 inp_2 sel gnd OAI21X1_1/C vdd NAND2X1
+XFILL_0_0_1 gnd vdd FILL
+.ends
+

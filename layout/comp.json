@@ -1,0 +1,112 @@
+[
+  {
+   "pins": [
+      [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "MUX_2X1",
+      "MUX_2X1"
+   ],
+   "devices": [
+       [
+         ["INVX1", 1],
+         ["OAI21X1", 1],
+         ["BUFX2", 1],
+         ["NAND2X1", 1 ]
+       ], [
+         ["INVX1", 1 ],
+         ["OAI21X1", 1 ],
+         ["BUFX2", 1 ],
+         ["NAND2X1", 1 ]
+       ]
+   ],
+   "nets": [
+    9,
+    9
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "sel",
+        "vdd",
+        "gnd",
+        "inp_1",
+        "inp_2",
+        "out"
+      ], [
+        "sel",
+        "vdd",
+        "gnd",
+        "inp_1",
+        "inp_2",
+        "out"
+      ]
+   ]
+  }
+]
