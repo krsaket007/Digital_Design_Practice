@@ -111,7 +111,7 @@ make importQflow
 make layout
 make doc
 perl ../Tools/perl/buildreport.pl
-#sudo make qflow
+sudo make qflow
 cd ..
 make dist
 
